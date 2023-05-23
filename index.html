@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Игра "Жуки QA"</title>
+    <style>
+      #game-container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        border: 1px solid black;
+      }
+      .bug {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: black;
+        cursor: pointer;
+      }
+      .leg {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: black;
+      }
+      #score {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+      }
+      #restart {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Игра "Жуки QA"</h1>
+    <div id="game-container"></div>
+    <div id="score">Жуки: 5</div>
+    <button id="restart" class="hidden">Начать заново</button>
+    <script src="game.js"></script>
+  </body>
+</html>
